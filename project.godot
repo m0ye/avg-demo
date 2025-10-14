@@ -11,5 +11,21 @@ config_version=5
 [application]
 
 config/name="AVGDemo"
+config/tags=PackedStringArray("mygame")
+run/main_scene="uid://b5bud2fxu53t6"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://bskc27jnyf8ms"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[file_customization]
+
+folder_colors={
+"res://Art/": "green",
+"res://Scripts/": "gray"
+}
