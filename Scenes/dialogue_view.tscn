@@ -1,0 +1,71 @@
+[gd_scene load_steps=2 format=3 uid="uid://bv8hklwjfar2e"]
+
+[ext_resource type="LabelSettings" uid="uid://dbyvla7janm2i" path="res://Settings/DialogueLabelSettings.tres" id="1_hisb1"]
+
+[node name="DialogueView" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DialogueName" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -720.0
+offset_top = -328.0
+offset_right = -482.0
+offset_bottom = -268.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Name" type="Label" parent="DialogueName"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "人名"
+label_settings = ExtResource("1_hisb1")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="DialogueText" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -720.0
+offset_top = -250.0
+offset_right = 720.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Text" type="Label" parent="DialogueText"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "对话内容巴拉巴拉哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+label_settings = ExtResource("1_hisb1")
+vertical_alignment = 1
+autowrap_mode = 2

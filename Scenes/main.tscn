@@ -1,92 +1,23 @@
 [gd_scene load_steps=3 format=3 uid="uid://b5bud2fxu53t6"]
 
-[ext_resource type="Texture2D" uid="uid://n14ixfy6pdos" path="res://Art/bjt.png" id="1_jjgbg"]
-[ext_resource type="Texture2D" uid="uid://bqnpllb50o68p" path="res://Art/js.png" id="2_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://bv8hklwjfar2e" path="res://Scenes/dialogue_view.tscn" id="1_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://dh04sim2mhpn3" path="res://Scenes/option_view.tscn" id="2_8gbba"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 
-[node name="GameManager" type="Node" parent="."]
+[node name="DialogueState" type="Node" parent="."]
 
-[node name="UIManager" type="Node" parent="."]
+[node name="UILayer" type="CanvasLayer" parent="."]
 
-[node name="BackgroundLayer" type="Control" parent="UIManager"]
-layout_mode = 3
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-grow_horizontal = 2
-grow_vertical = 2
+[node name="DialogueView" parent="UILayer" instance=ExtResource("1_bo1nx")]
 
-[node name="Background" type="Sprite2D" parent="UIManager/BackgroundLayer"]
-scale = Vector2(0.667, 0.667)
-texture = ExtResource("1_jjgbg")
-
-[node name="CharacterLayer" type="Control" parent="UIManager"]
-layout_mode = 3
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Character" type="Sprite2D" parent="UIManager/CharacterLayer"]
-scale = Vector2(0.667, 0.667)
-texture = ExtResource("2_bo1nx")
-
-[node name="DialogBox" type="PanelContainer" parent="UIManager"]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
+[node name="TextureButton" type="TextureButton" parent="UILayer"]
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -517.0
-offset_top = -184.0
-offset_right = 517.667
-offset_bottom = -44.0
-grow_horizontal = 2
-grow_vertical = 0
-
-[node name="DialogText" type="RichTextLabel" parent="UIManager/DialogBox"]
-layout_mode = 2
-
-[node name="OptionContainer" type="VBoxContainer" parent="UIManager"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -270.0
-offset_top = -145.0
-offset_right = 230.0
-offset_bottom = 44.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-alignment = 1
 
-[node name="OptionButton1" type="Button" parent="UIManager/OptionContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="OptionButton2" type="Button" parent="UIManager/OptionContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="OptionButton3" type="Button" parent="UIManager/OptionContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="CenterContainer" type="CenterContainer" parent="UIManager"]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="OptionView" parent="UILayer" instance=ExtResource("2_8gbba")]
