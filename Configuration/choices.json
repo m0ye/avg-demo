@@ -1,0 +1,12 @@
+[
+    {
+        "choiceName": "room_choice_1",
+        "choiceText": "好的，我去！",
+        "choiceNextNode": "room_dialogue_4"
+    },
+    {
+        "choiceName": "room_choice_1",
+        "choiceText": "不！我想静静！",
+        "choiceNextNode": "room_dialogue_5"
+    }
+]

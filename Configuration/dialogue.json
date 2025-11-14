@@ -1,0 +1,65 @@
+[
+    {
+        "node": "room_dialogue_1",
+        "nodeType": "dialogue",
+        "character": "教练",
+        "text": "你好，你终于来了！",
+        "nextNode": "room_dialogue_2",
+        "choice": "",
+        "command": ""
+    },
+    {
+        "node": "room_dialogue_2",
+        "nodeType": "dialogue",
+        "character": "教练",
+        "text": "今天你要训练吗？",
+        "nextNode": "room_dialogue_3",
+        "choice": "",
+        "command": ""
+    },
+    {
+        "node": "room_dialogue_3",
+        "nodeType": "dialogue",
+        "character": "我",
+        "text": "我想想...",
+        "nextNode": "room_choice_1",
+        "choice": "",
+        "command": ""
+    },
+    {
+        "node": "room_choice_1",
+        "nodeType": "choice",
+        "character": "",
+        "text": "",
+        "nextNode": "",
+        "choice": "room_choice_1",
+        "command": ""
+    },
+    {
+        "node": "room_dialogue_4",
+        "nodeType": "dialogue",
+        "character": "教练",
+        "text": "好，我们这就出发!",
+        "nextNode": "room_command_1",
+        "choice": "",
+        "command": ""
+    },
+    {
+        "node": "room_dialogue_5",
+        "nodeType": "dialogue",
+        "character": "教练",
+        "text": "你这懒鬼！",
+        "nextNode": "room_command_1",
+        "choice": "",
+        "command": ""
+    },
+    {
+        "node": "room_command_1",
+        "nodeType": "command",
+        "character": "",
+        "text": "",
+        "nextNode": "",
+        "choice": "",
+        "command": "END"
+    }
+]
